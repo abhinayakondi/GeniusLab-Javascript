@@ -1,0 +1,47 @@
+<!-- onsubmit syntax:
+1️⃣ In HTML: 
+<element onsubmit="myScript">
+
+2️⃣ In JavaScript: 
+object.onsubmit = function(){myScript};
+
+3️⃣ In JavaScript, using the addEventListener() method:  
+object.addEventListener("submit", myScript); -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> onsubmit event attribute </title>
+    </head>
+    <body>
+        <center>
+            <h1 style="color: green;"> Geeks for Geeks </h1>
+            <h2> onsubmit event attribute </h2>
+            <form id="gfg" action="#">
+                Enter Name
+                <input id="name1" type="text" name="firstname">
+                <input type="submit" value="submit">
+            </form>
+            <!-- form tag is used to collect user input and send it somewhere for processing.
+            It defines a section on a webpage that contains input elements. -->
+        </center>
+
+        <script>
+            
+            document.getElementById("gfg")
+            .onsubmit = function (){
+                myFun();
+            }
+
+            function myFun(){
+                let x=document.getElementById("name1").value;
+                if(x===""){
+                    alert("Name must be filled out");
+                }
+                else{
+                    alert("Yay! you submitted the form");
+                }
+            }
+        </script>
+    </body>
+</html>

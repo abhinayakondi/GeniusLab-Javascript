@@ -1,0 +1,23 @@
+<!--Internal <script> tag inside <body> tag-->
+
+<html>
+<head></head>
+<body>
+    <h2>
+        Add JavaScript Code
+        inside Body Section
+    </h2>
+    <h3 id="demo" style="color:green;"> <!--inline javascript-->
+        GeeksforGeeks
+    </h3>
+    <button type="button" onclick="myFun()"> <!--inline javascript-->
+        Click Here
+    </button>
+    <script>
+        function myFun() {
+            document.getElementById("demo")
+                .innerHTML = "Content changed!";
+        }
+    </script>
+</body>
+</html>

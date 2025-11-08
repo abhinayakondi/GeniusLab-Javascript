@@ -1,0 +1,38 @@
+<!--This program explains the use of onchange event but also 
+how to use and create a dropdown list using <select> tag -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> onchange event attribute </title>
+        <style>
+            body{
+                text-align: center;
+            }
+            h1{
+                color:green;
+            }
+        </style>    
+    </head>
+    <body>
+        <h1> Geeks for Geeks </h1>
+        <h2> onchange Event Attribute </h2>
+        <p> Choose Subject: </p>
+        <select id="GFG" onchange="myFun()">
+            <option value="Blank">     </option>
+            <option value="Data Structures"> Data Structures </option>
+            <option value="Algorithm"> Algorithm </option>
+            <option value="Computer Networks"> Computer Networks </option>
+            <option value="Operating System"> Operating System </option>
+            <option value="HTML"> HTML </option>
+        </select>
+        <!-- The select tag is used to create a drop-down list. The onchange event occurs when the value of the element is changed. -->
+        <p id="demo"></p>
+        <script>
+            function myFun(){
+                let x = document.getElementById("GFG").value;
+                document.getElementById("demo")
+                .innerHTML = "You selected : " + x;
+            }
+        </script>
+    </body>
+</html>

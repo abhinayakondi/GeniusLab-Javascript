@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <style>
+            h1{
+                color: green;
+                font-size: 50px;
+            }
+            p{
+                background-color: lightgrey;
+                padding: 30px 30px;
+            }
+        </style>
+        <center>
+        <h1>GeeksforGeeks</h1>
+        <p id="gfg">Hover over me and see</p>
+        </center>
+
+        <script>
+            document.getElementById("gfg")
+            .onmouseout = function () {
+                GFG();
+            }
+            function GFG(){
+                document.getElementById("gfg")
+                . style.color = "yellow";   
+                document.getElementById("gfg")
+                . style.backgroundColor = "black";
+            }
+        </script>    
+        </body>
+</html>

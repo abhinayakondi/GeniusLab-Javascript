@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> onload event attribute with image </title>
+        <style>
+            img{
+            padding-left: 400px;
+            width: 430px;
+            height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/geeksforgeeks-9.png" 
+        onload="myFun()">
+        <!-- img tag is used to display images on a webpage.
+        The onload event attribute is used here to call a function when the image is loaded. -->
+    
+        <script>
+            function myFun(){
+                alert("Image successfully loaded");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!-- Using addEventListener() method:
+Try using addEventListener by default for these kind of problems 
+addEventListener is more organized-->
+
+<!-- Syntax:
+1️⃣In HTML:
+<element onkeypress="myScript"></element>
+
+2️⃣In JavaScript:
+object.onkeypress = function(){myScript};
+
+3️⃣Using addEventListener() method:
+object.addEventListener("keypress", myScript); 
+-->
+
+<html>
+    <body>
+        <h1 style="color: green;">
+            GeeksforGeeks
+        </h1>
+        <p>
+          Press any key inside the input field
+        </p>
+
+        <input type="text" id="inputField" style="background-color:green">
+        <!-- First use of input field  -->
+
+        <script>
+        document.getElementById("inputField")
+        .addEventListener("keypress", GFGfun);
+        // Only difference is here "keypress" instead of "keydown" from the previous examples
+        function GFGfun(){
+            document.getElementById("inputField")
+            .style.backgroundColor = "yellow";
+        }
+        </script>
+    </body>
+</html>

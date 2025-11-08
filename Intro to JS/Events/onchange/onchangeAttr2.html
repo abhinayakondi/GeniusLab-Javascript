@@ -1,0 +1,63 @@
+<!--This program explains the use of onchange event but also 
+how to use and create a checkbox using <select> tag -->
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <!-- UTF-8 (Unicode Transformation Format – 8-bit) is the most widely used encoding.
+         Without this, characters like “é” or “ç” could appear as weird symbols (�).-->
+
+    <!-- Controls how your webpage is displayed on mobile and other devices.
+        Makes your website responsive — it looks good on phones, tablets, and desktops.
+        width=device-width → makes the page width match the device’s screen width.
+        initial-scale=1.0 → sets the initial zoom level (1 means 100%, no zoom). -->
+    <head>
+        <title> onchange event attribute </title>
+        <style>
+            body{
+                text-align: center;;
+            }
+            h1{
+                color:green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Geeks for Geeks </h1>
+        <h2> onchange Event Attribute </h2>
+        <p> Choose your favorite fruit: </p>
+        <label>
+            <input type="checkbox" id="fruit1" value="Apple" onchange="myFun()"> Apple </input>
+            <input type="checkbox" id="fruit2" value="Banana" onchange="myFun()"> Banana </input>
+            <input type="checkbox" id="fruit3" value="Mango" onchange="myFun()"> Mango </input>
+            <!-- input tag is used to create a checkbox. 
+            the onchange event occurs when the value of the element is changed.
+            checkbox allows the user to select multiple options.
+            checkbox normally has two states: checked and unchecked which is checked by onchange event. -->
+        </label>
+        <!-- The label tag is used to used to associate text with a form control.
+        It helps wrap the input -->
+        <p id="demo"></p>
+
+        <script>
+            function myFun(){
+                let fruits = [];
+                let f1 = document.getElementById("fruit1");
+                let f2 = document.getElementById("fruit2");
+                let f3 = document.getElementById("fruit3");
+                if(f1.checked){
+                    fruits.push(f1.value);
+                }
+                if(f2.checked){
+                    fruits.push(f2.value);
+                }
+                if(f3.checked){
+                    fruits.push(f3.value);
+                }
+                document.getElementById("demo").innerHTML = "Fruits you selected: " + fruits;
+                console.log("Fruits you selected: " + fruits);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!-- Using in HTML attribute: with function-->
+ <html>
+    <body>
+        <h1 style="color: green;">
+            GeeksforGeeks
+        </h1>
+        <p>
+          Press any key inside the input field
+        </p>
+
+        <input type="text" id="inputField" style="background-color:green" onkeydown="GFGfun()";>
+        <script>
+            function GFGfun(){
+            document.getElementById("inputField")
+            .style.backgroundColor = "yellow";
+        }
+        </script>
+    </body>
+ </html>

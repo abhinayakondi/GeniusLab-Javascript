@@ -1,0 +1,18 @@
+<!--
+The onclick attribute in the <button> calls the myFun() function when clicked.
+The myFun() function updates the <p> element with id="gfg" by setting its innerHTML to "GeeksforGeeks".
+Initially, the <p> is empty, and its content changes dynamically on button click.
+-->
+<html>
+    <body>
+        <button onclick="myFun()"> Click Me </button>
+        <p id="gfg"></p>
+
+        <script>
+        function myFun(){
+            document.getElementById("gfg")
+            .innerHTML="You clicked the button!"
+            }
+    </script> 
+    </body>
+</html>

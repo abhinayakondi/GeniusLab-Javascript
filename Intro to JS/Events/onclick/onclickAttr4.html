@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <p id="gfg"> Click Me (I'm not a button though)</p>
+
+        <script>
+            document.getElementById("gfg")
+            .addEventListener("click", (e) => { // e is the event object
+                GFGfun();
+            });
+            //can be replaced by .addEventListener("click", GFGfun());
+
+            function GFGfun(){
+                document.getElementById("gfg")
+                .innerHTML = "YOU CLICKED ME?!";
+                document.getElementById("gfg")
+                .style.color = 'red';
+                document.getElementById("gfg")
+                .style.background = 'cyan';
+
+            }
+        </script>
+    </body>
+</html>

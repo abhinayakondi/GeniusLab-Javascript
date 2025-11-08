@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <p id="gfg" onclick="myFun()">Click Me</p>
+
+        <script>
+        function myFun(){
+            document.getElementById("gfg") //here innerHTML doesn't work independently and thus "Click Me" elements requires an id (unlike alert in onmouseover event example)
+            .innerHTML="You clicked the button!"
+            }
+    </script> 
+    </body>
+</html>
