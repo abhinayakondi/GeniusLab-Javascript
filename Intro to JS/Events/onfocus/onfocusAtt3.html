@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>onfocus in HTML using addEventListener </title>
+    </head>
+    <body>
+        <center>
+            <h1 style="color : green;"> Geeks for Geeks</h1>
+            <h2> onfocus event attribute using addEventListener </h2>   
+            <form>
+                Name:
+                <input id="gfg" type="text">        
+            </form>
+        </center>
+        <script>
+            document.getElementById("gfg")
+            .addEventListener("focus",myFun);
+            // here you cannot use "onfocus" instead use "focus"
+
+            function myFun(){
+                document.getElementById("gfg")
+                .style.backgroundColor= "green";
+            }
+        </script>
+    </body>
+</html>

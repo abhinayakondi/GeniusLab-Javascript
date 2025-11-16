@@ -1,0 +1,33 @@
+<!--
+In HTML:
+<element onfocus="myScript">
+
+In JavaScript:
+object.onfocus = function(){myScript};
+
+In JavaScript, using the addEventListener() method:
+object.addEventListener("focus", myScript);
+-->
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>onfocus in HTML</title>
+    </head>
+    <body>
+        <center>
+            <h1 style="color: green;">Geeks for Geeks</h1>
+            <h2>onfocus event attribute</h2>
+            <form>
+                Name:
+                <input type="text" onfocus="myFun(this)">
+                <!--Here this is used because it refers to the current element.-->
+             </form>
+        </center>
+        <script>
+            function myFun(gfgid){
+                gfgid.style.backgroundColor= "green";
+            }
+        </script>
+    </body>
+</html>

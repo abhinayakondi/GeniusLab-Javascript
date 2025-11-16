@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>onfocus in Javascript</title>
+    </head>
+    <body>
+        <center>
+            <h1 style="color: green;"> Geeks for Geeks</h1>
+            <h2> onfocus event attribute</h2>
+            <form>
+                Name:
+                <input id="gfg" type="text">
+            </form>
+        </center>
+        <script>
+            document.getElementById("gfg")
+            .onfocus = function(){
+                myFun();
+            }
+            function myFun(){
+                document.getElementById("gfg")
+                .style.backgroundColor= "red"
+            }
+        </script>
+    </body>
+</html>
