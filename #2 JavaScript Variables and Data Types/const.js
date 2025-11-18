@@ -6,11 +6,11 @@ ob.a = 20; // Allowed
 console.log(ob.a);  // 20   
 
 const obj = { name: "Pranjal" };
-obj.name = "Nanda";
+obj.name = "Abhinaya";
 console.log(obj.name); 
 
 // Destructuring Assignment with const
-const { name, age } = { name:"Meenal", age: 28 };
+const { name, age } = { name:"Sohan", age: 15 };
 console.log(name, age);
 
 // Immutable Binding, Not Value
