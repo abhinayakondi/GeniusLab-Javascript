@@ -1,5 +1,6 @@
 // JavaScript does not need to be declared with a specific data type
 //----------------Numbers----------------
+// There is only one type number that covers both integers and floating point numbers.
 
 let n1 = 2;
 console.log(n1)
@@ -58,3 +59,21 @@ let sym1 = Symbol("Geeks");
 let sym2 = Symbol("Geeks");
 console.log(sym1 == sym2);
 
+//-----------Properties-----------
+
+console.log(typeof NaN);   // NaN is of type number
+console.log(NaN === NaN); // NaN is not equal to itself : false
+
+// Same type for integer and floating-point: numbers
+let x = 42;     // Integer
+let y = 42.5;   // Floating-point
+
+console.log(typeof x); 
+console.log(typeof y);
+
+// Same type for character and string: strings
+let str1 = "gfg";   // String
+let str2 = 'g';    // Character
+
+console.log(typeof str1); 
+console.log(typeof str2);
