@@ -1,5 +1,5 @@
 // JavaScript does not need to be declared with a specific data type
-// Numbers
+//----------------Numbers----------------
 
 let n1 = 2;
 console.log(n1)
@@ -13,7 +13,7 @@ console.log(n3)
 let n4 = 'something here too' / 2;
 console.log(n4)
 
-// Strings
+//--------------Strings----------------
 
 let s1 = "Hello There";
 console.log(s1); 
@@ -24,7 +24,7 @@ console.log(s2);
 let s3 = `can embed ${s1}`;
 console.log(s3);
 
-// Booleans
+//--------------Booleans----------------
 
 let b1 = true;
 console.log(b1);  
@@ -32,17 +32,17 @@ console.log(b1);
 let b2 = false;
 console.log(b2);
 
-// Null
+//--------------Null----------------
 
 let age = null;
 console.log(age)
 
-// Undefined
+//-------------Undefined----------------
 
 let a;
 console.log(a);
 
-// BigInt
+//-------------BigInt----------------
 // Used for integers larger than 2^53 - 1
 // The largest number in JS that can be safely represented using Number primitive is 9007199254740991 (2^53 - 1) 
 // known as MAX_SAFE_INTEGER
@@ -52,7 +52,7 @@ console.log(b);
 const MaxBigInt = Number.MAX_SAFE_INTEGER;
 console.log(MaxBigInt);
 
-// Symbol
+//------------Symbol----------------
 // Used to create unique identifiers
 let sym1 = Symbol("Geeks");
 let sym2 = Symbol("Geeks");
