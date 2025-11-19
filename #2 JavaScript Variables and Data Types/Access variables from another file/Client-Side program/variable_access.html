@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Accessing variable from another file</title>
+        <script src="module1.js"></script>
+    </head>
+    <body>
+        <center>
+            <h1 style="color: green;">Geeks for Geeks</h1>
+            <button onclick="myFun()">Click here to view student info</button>
+            <p id="gfg" style="color: blueviolet; font-family: Georgia, 'Times New Roman', Times, serif; font-size: large;"></p>
+
+            <script>
+                function myFun(){
+                    let name=Student.name;
+                    let age=Student.age;
+                    let dept=Student.dept;
+                    let score=Student.score;
+
+                    let str= "Name: " + name + ", Age: " + age + ", Department: " + dept + ", Score: " + score;
+                    
+                    document.getElementById("gfg")
+                    .innerHTML = str;
+                }
+            </script>
+
+        </center>
+    </body>
+</html>
