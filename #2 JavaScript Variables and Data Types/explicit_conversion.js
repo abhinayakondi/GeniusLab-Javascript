@@ -33,7 +33,8 @@ let res2 = Boolean("");
 let res3 = Boolean(false);
 let res4 = Boolean(NaN);
 let res5 = Boolean(0);
-let res6 = Boolean("Hello");  
+let res6 = Boolean(1);
+let res7 = Boolean("Hello");  
 console.log(res)    // false
 console.log(res1)   // false
 console.log(res2)   // false        
@@ -41,3 +42,4 @@ console.log(res3)   // false
 console.log(res4)   // false
 console.log(res5)   // false
 console.log(res6)   // true
+console.log(res7)   // true
