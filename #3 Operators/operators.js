@@ -86,6 +86,8 @@ console.log();
 
 // Chaining Operators (?.)
 console.log("Chaining Operators:");
+// ?. safely accesses a property or method.
+//Returns undefined if the property doesn’t exist.
 const detailsObj = { name: "Abi", address: { city: "Toronto", province: "Ontario" } };
 console.log(detailsObj.address?.city);
 console.log(detailsObj.contact?.phone);
