@@ -18,8 +18,12 @@ console.log();
 //---------------Comparison Operators---------------
 console.log("Comparison Operators:");
 console.log(10 > 5);
-console.log(10 == '10'); // Loose equality: value + type coercion
-console.log(10 === "10"); // Strict equality: value only
+console.log(10 < 5);
+console.log(10 == "10"); // Loose equality: checks for value only not type
+console.log(10 === "10"); // Strict equality: checks for value and type
+console.log('5' != '5'); // false     
+console.log(5 != '5'); // false
+console.log(5 !== '5'); // Strict inequality operator: true
 console.log();
 
 //----------------Logical Operators---------------
