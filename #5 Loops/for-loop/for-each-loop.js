@@ -7,6 +7,8 @@
 // Another function here is -> forEach(...)
 // JavaScript treats functions as first-class citizens, so you can pass them around like variables.
 
+
+//for each element in an array
 const numbers = [10, 20, 30];
 
 // original declaration
@@ -21,3 +23,10 @@ numbers.forEach(function (num) { console.log(num)});
 // can also be written using arrow function syntax
 console.log("---- Using Arrow Function ----");
 numbers.forEach(num => { console.log(num) }); // same output
+
+//regular for loop to print all the elements of an array
+console.log("---- Regular for loop ----");
+let arr = [10, 20, 30];
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]); 
+}
