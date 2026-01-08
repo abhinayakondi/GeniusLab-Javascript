@@ -50,9 +50,27 @@ console.log();
 //============================================================
 // Creating custome error types by extending the Error class
 //============================================================
+class ValidationError extends Error {
+    constructor(message) {
+        super(message); // call the parent class constructor    
+        this.name = "ValidationError"; // set the error name
+ }
+}
+
 function ValidateInput(value) {
     if (value<0){
         throw new ValidationError("Input must be a non-negative number.");
     }
     return "Valid input";
+}
+
+//Call the function
+try{
+    ValidateInput(-5);
+}
+catch(e){
+    console.log(e);
+}
+finally{
+    console.log("finally");
 }
