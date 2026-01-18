@@ -35,3 +35,10 @@ let sum = add(5, 10);
 console.log("Sum: " + sum); 
 let sum2 = add(20, 30);
 console.log("Sum: " + sum2);
+
+//-------------------Function Expressions-----------------------
+// We may assign a function to a variable and then utilize that variable as a function in JS
+let welcome=function(name){
+    return "Welcome to the Genius Lab, " + name + "!";
+}
+console.log( welcome("Abi") );
