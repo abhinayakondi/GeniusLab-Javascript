@@ -38,6 +38,7 @@ console.log("Sum: " + sum2);
 
 //-------------------Function Expressions-----------------------
 // We may assign a function to a variable and then utilize that variable as a function in JS
+// Also known as Anonymous Function 
 let welcome=function(name){
     return "Welcome to the Genius Lab, " + name + "!";
 }
