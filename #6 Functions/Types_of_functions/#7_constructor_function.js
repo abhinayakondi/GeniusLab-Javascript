@@ -14,7 +14,9 @@ const person2 = new Person("Bob", 25, "Canada", "Toronto", "6ft");
 console.log(person1);
 console.log(person2);  
 
-// Benefits of constructor functions:
-// 1. Reusability: Create multiple objects with the same structure easily.
-// 2. Organization: Group related properties and methods together.
-// 3. Clarity: Clearer syntax for creating objects compared to object literals.
+/*
+Benefits of constructor functions:
+ 1. Reusability: Create multiple objects with the same structure easily.
+ 2. Organization: Group related properties and methods together.
+ 3. Clarity: Clearer syntax for creating objects compared to object literals.
+ */
