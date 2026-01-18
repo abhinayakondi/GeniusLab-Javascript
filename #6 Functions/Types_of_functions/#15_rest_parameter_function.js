@@ -1,7 +1,7 @@
 // Useful when you don't know how many arguments will be passed to the function.
 // Take all arguments passed to this function and put them into an array called nums.
 
-// Regular array iteration
+// Regular array calculation
 function add(...numbers) {
   let total = 0;
   let i=0;
