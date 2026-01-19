@@ -12,3 +12,15 @@ console.log(square(4)); // 16
 
 const add = (a, b) => a + b;
 console.log(add(2, 5)); // 8
+
+// Use braces {} for multiple statements
+const great = (a, b) => {
+    if (a > b)
+        return "a is greater";
+    else
+        return "b is greater";
+}
+console.log(great(3, 5));
+
+// Function Declaration: Can be called anywhere in the scope
+// Function Expression: Can only be called after the line where it is defined

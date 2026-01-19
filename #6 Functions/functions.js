@@ -1,4 +1,4 @@
-// -----------Function Declaration Basic Syntax-----------------
+// -----------Traditional Function Declaration Syntax-----------------
 function Greetings(name){ // name is a parameter
     console.log("Hello, " + name + "!");
 }
