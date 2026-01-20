@@ -7,7 +7,10 @@
 // For learning and for simple code, arrow functions are kinda unnecessary.
 // They exist for convenience, not because JavaScript couldn’t work without them.
 
-const square = n => n * n;
+const greet = () => "Hi there!";
+console.log(greet()); // Hi there!
+
+const square = (n) => n * n;
 console.log(square(4)); // 16
 
 const add = (a, b) => a + b;

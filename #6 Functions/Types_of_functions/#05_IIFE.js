@@ -5,7 +5,8 @@
 // One-time setup
 // One-time initialization
 
-// Anonymous IIFE
+//---------Anonymous IIFE-------------
+console.log();
 (function (){
     console.log("This is an IIFE!");
 })();
@@ -15,10 +16,15 @@ let welcome = (function(){
 })();
 console.log(welcome);
 
-//Named IIFE
+//-----------Named IIFE--------------
 (function greet(){
     console.log("Hello from Named IIFE!");
 })();
 
 //greet(); 
 // Error: greet is not defined
+
+//-----------Arrow function IIFE--------------
+(
+    () => console.log("Hello from Arrow function IIFE")
+)();
