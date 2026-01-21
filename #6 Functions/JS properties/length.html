@@ -1,0 +1,39 @@
+<!-- Returns the number of parameters expected by a function -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function Length Example</title>
+    <script>
+    // Creating function name func
+    // When no parameters are given
+    function func(){}
+    console.log("The number of parameters required by the func are: ", func.length);
+ 
+    // When one parameter is given
+    function func1(a){}
+    console.log("The number of parameters required by the func1 are: ", func1.length);
+
+    // When two parameters are given
+    function func2(a, b){}
+    console.log("The number of parameters required by the func2 are: ", func2.length);
+
+    // When three parameters are given
+    function func3(a, b, c){}
+    console.log("The number of parameters required by the func3 are: ", func3.length);
+    
+    // When four parameters are given
+    function func4(a, b, c, d){}
+    console.log("The number of parameters required by the func4 are: ", func4.length);
+
+    //// When array of arguments are given
+    function func5(...args){}
+    console.log("The number of parameters required by the func4 are: ", func5.length);
+
+</script>
+</head>
+<body>
+    <h2>Check the console for output</h2>
+</body>
+</html>
+
+<!-- Run file using start <filename> -->
