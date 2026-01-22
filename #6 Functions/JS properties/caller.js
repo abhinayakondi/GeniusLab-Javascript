@@ -16,3 +16,4 @@ func1();
 console.log();
 console.log("from function.caller: ", func1.caller)//null
 console.log("from function.caller: ", func2.caller)//null
+
